@@ -1,0 +1,49 @@
+<div class="home">
+    <div class="jumbotron">
+        <h1 class="display-3">Bienvenido</h1>
+        <p class="lead">Este sistema te permitira llevar el registro de tu personal de la Salud</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button" routerLink="/login">Acceder Sistema</a>
+        </p>
+      </div>      
+</div>
+<div class="carrusel">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+  
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+    
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/portada2.jpg" width="1200" height="450">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/portada1.jpg" width="1200" height="450">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/portada3.jpg" width="1200" height="450">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/portada.png" width="1200" height="450">
+        </div>
+      </div>
+    
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    
+    </div>
+    
+  </div>
+  <div style ="text-align : center; color:blue; padding-top: 10px">{{mensaje | uppercase}} {{fecha | date:"dd/MM/yyyy"}}</div>
+
+<app-contenido></app-contenido>
